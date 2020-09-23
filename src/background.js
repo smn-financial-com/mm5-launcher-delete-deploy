@@ -24,7 +24,7 @@ let isHTML = false,
 // serverBase = 'https://advanceddashboard.pat.td.com:443';
 const updateServer = 'https://mm5-launcher-delete-deploy.vercel.app';
 const feed = `${updateServer}/update/${process.platform}/${app.getVersion()}`;
-console.log('Autoupdate feed URL::', feed);
+console.log('Autoupdate feed URL:', feed);
 autoUpdater.setFeedURL(feed);
 
 const isMac = process.platform === 'darwin';
