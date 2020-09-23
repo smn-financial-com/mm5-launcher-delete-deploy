@@ -22,6 +22,10 @@ let isHTML = false,
 // isHTML = false;
 // userToken = '6f21f66c-74db-4a09-a7f8-0df3ce942a1e';
 // serverBase = 'https://advanceddashboard.pat.td.com:443';
+const updateServer = 'https://mm5-launcher-delete-deploy.vercel.app';
+const feed = `${updateServer}/update/${process.platform}/${app.getVersion()}`;
+console.log('Autoupdate feed URL::', feed);
+autoUpdater.setFeedURL(feed);
 
 const isMac = process.platform === 'darwin';
 const appData = path.join(app.getPath('userData'), `../${mm5Props.AppData}`);
