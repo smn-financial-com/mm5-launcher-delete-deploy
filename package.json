@@ -1,6 +1,6 @@
 {
   "name": "mm5-customer-td-launcher",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "scripts": {
     "lint": "vue-cli-service lint",
