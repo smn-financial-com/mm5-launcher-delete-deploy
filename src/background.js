@@ -46,7 +46,7 @@ function createWindow() {
   dialog.showMessageBox(win, {
     type: 'info',
     title: 'App Version',
-    message: `Dummy update:: ${app.getVersion()}`,
+    message: `Version:: ${app.getVersion()}`,
   });
   if (!isDevelopment) {
     autoUpdater.checkForUpdatesAndNotify();
