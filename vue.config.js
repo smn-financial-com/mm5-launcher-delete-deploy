@@ -33,7 +33,8 @@ module.exports = {
         },
         publish: [
           {
-            provider: 'github',
+            provider: 's3',
+            bucket: 'swami-launcher',
           },
         ],
         win: {
